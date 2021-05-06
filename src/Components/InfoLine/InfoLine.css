@@ -1,0 +1,27 @@
+.InfoLine{
+    position: relative;
+    width:100%;
+    height: 60px;
+    border-bottom: 1px solid #fff;
+    display: grid;
+    grid-template: 100% / 7% 20% repeat(5, 14%);
+    align-items: center;
+    justify-items: center;
+}
+
+.info__name{
+    width: 100%;
+    justify-items: flex-start;
+    display: inline-flex;
+    align-items: center;
+}
+
+.info__name span{
+    margin-left: 10px;
+    text-transform: uppercase;
+    background: rgba(80, 80, 80, 0.5)
+}
+.info__logo{
+    width: 22px;
+    margin-right: 10px;
+}

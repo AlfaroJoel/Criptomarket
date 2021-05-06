@@ -1,0 +1,18 @@
+.Coins{
+    width: 100%;
+    height: auto;
+    background-color: #17161a;
+    color: #fff;
+}
+.coins__header{
+    display: grid;
+    grid-template: 100% / 7% 20% repeat(5, 14%);
+    background: rgba(136, 136, 136, 0.568)
+}
+
+.coins__name{
+    width: 100%;
+    justify-items: flex-start;
+    display: inline-flex;
+    align-items: center;
+}
