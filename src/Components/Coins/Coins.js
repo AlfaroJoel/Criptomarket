@@ -14,10 +14,13 @@ function Coins(props){
     const api = endpoint+currency+coinId+order+coins+params+priceChangue;
     //https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=3&page=1&sparkline=false&price_change_percentage=24h
 
+    
     const [info, setInfo] = useState([]);
 
     useEffect(() =>{
         getData();
+        let coin = document.querySelector('.coin__list');
+        console.log(coin) 
     }, [])
 
     const getData = async () => {
@@ -33,16 +36,18 @@ function Coins(props){
                 <th className='coins__name'>Name</th>
                 <th className='coins__price'>Price</th>
                 <th className='coins__24h'>24h</th>
-                <th className='coins__7d'>7d</th>
+                <th className='coins__supply'>Circulating Supply</th>
                 <th className='coins__volume'>Volume</th>
                 <th className='coins__marketcap'>Market Cap</th>
             </tr>
+            <div className='coin__list'>
                 {
                     info.map((item) => (
                         <InfoLine key={item.market_cap_rank} coin={item}></InfoLine>
                     ))
                 }
-        </div>
+            </div>
+       </div>
     );
 }
 
