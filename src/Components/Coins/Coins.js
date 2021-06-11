@@ -3,6 +3,7 @@ import InfoLine from '../InfoLine/InfoLine';
 
 import './Coins.css'
 
+
 function Coins(props){
     const endpoint = 'https://api.coingecko.com/api/v3/coins/markets?';
     const currency = `vs_currency=${props.currency}`;
@@ -19,8 +20,6 @@ function Coins(props){
 
     useEffect(() =>{
         getData();
-        let coin = document.querySelector('.coin__list');
-        console.log(coin) 
     }, [])
 
     const getData = async () => {
@@ -30,7 +29,7 @@ function Coins(props){
     }
 
     return(
-        <div className='Coins'>
+        <>
             <tr className='coins__header'>
                 <th className='coins__rank'>#</th>
                 <th className='coins__name'>Name</th>
@@ -47,7 +46,7 @@ function Coins(props){
                     ))
                 }
             </div>
-       </div>
+       </>
     );
 }
 

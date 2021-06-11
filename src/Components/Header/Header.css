@@ -1,0 +1,33 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: rgb(24, 24, 24);
+    z-index: 100;
+    border-bottom: 2px solid rgb(133, 133, 133);
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    color: #fff;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+a:hover{
+    color: rgb(175, 175, 175);
+}
+input{
+    outline: none;
+}
+.menu{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}

@@ -1,10 +1,16 @@
 .coins__header{
     display: grid;
-    grid-template: 100% / 7% 20% 13% 13% 16% 14% 15%;
-    height: auto;
-    background-color: #535353;
+    grid-template: 100% / 7% 20% 13% 13% 16% 14% 17%;
+    height: 32px;
+    align-items: center;
+    background-color: #575757bb;
     color: #fff;
 }
+
+.coins__header th{
+    font-size: .8em;
+}
+
 .coins__name{
     width: 100%;
     justify-items: flex-start;

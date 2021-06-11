@@ -1,13 +1,13 @@
 .InfoLine{
     position: relative;
     width:100%;
-    height: 60px;
+    height: 80px;
     border-bottom: 1px solid #fff;
-    background-color: #17161a;
+    background-color: #17161aea;
     color: #fff;
     cursor: pointer;
     display: grid;
-    grid-template: 100% / 7% 20% 13% 13% 16% 14% 15%;
+    grid-template: 100% / 7% 20% 13% 13% 16% 14% 17%;
     align-items: center;
     justify-items: center;
 }
@@ -27,6 +27,18 @@
     align-items: center;
 }
 
+.info__price span{
+    display: none;
+}
+.InfoLine:active .info__price p {
+    display: none;
+}
+.InfoLine:active{
+    cursor: progress;
+}
+.InfoLine:active .info__price span{
+    display: block;
+}
 .info__name span{
     margin-left: 10px;
     text-transform: uppercase;
@@ -54,4 +66,10 @@
     margin-left: 10px;
     background: rgba(80, 80, 80, 0.5);
     height: 25px;
+}
+.green{
+    color: green;
+}
+.red{
+    color: red;
 }

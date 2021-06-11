@@ -1,6 +1,9 @@
 .App{
     position:relative;
     width: 100%;
-    height: 100vh;
-    padding: 200px 100px;    
+    padding: 180px 100px;
+}
+.order label{
+    color: #fff;
+    font-weight: 600;
 }
